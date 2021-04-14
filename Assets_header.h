@@ -14,29 +14,32 @@ namespace Orvox {
          * structen. Byte är byte så det spelar ingen roll om de kommer från disk eller ram.
          */
         namespace Material_properties {
-            const char Some_material[] = "Material/Some_material.mtl";
+            const char Sword_material[] = "Material/Sword.mat";
+            const char Waffle_material[] = "Material/Waffle.mat";
         }
 
         namespace Mesh {
-            const char Sword[] = "Mesh/Sword.bin";
-            const char Waffle[] = "Runtime/Mesh/Waffle.bin";
+            const char Sword[] = "Mesh/Sword.msh";
+            const char Waffle[] = "Mesh/Waffle.msh";
         }
 
         namespace Shader {
-            const char my_vs_shader[] = "Shader/my_vs_shader.bin";
-            const char my_fs_shader[] = "Shader/my_fs_shader.bin";
+            const char my_vs_shader[] = "Shader/my_shader.vsbin";
+            const char my_fs_shader[] = "Shader/my_shader.fsbin";
         }
 
         /**
          * Här börjar det intressanta. Vi kan gruppera ihop meshes med materialegenskaper. :D
          */
+         /*
         namespace Model_asset {
             using namespace Orvox::Runtime_assets;
             struct Model {
                 const char* m_mesh;
                 const char* m_material;
             };
-            const Model Sword_model{Mesh::Sword, Material_properties::Some_material};
+            const Model Sword_model{Mesh::Sword, Material_properties::Sword_material};
         }
+          */
     }
 }
